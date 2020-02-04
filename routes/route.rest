@@ -1,0 +1,43 @@
+GET http://localhost:3000/jokes
+
+###
+
+GET http://localhost:3000/jokes/5e31453794e3474ff8d21445
+
+###
+
+POST http://localhost:3000/jokes
+Content-Type: application/json
+
+{
+    "overskrift": "asd",
+    "jokeTekst": "test2" 
+}
+
+###
+
+PATCH http://localhost:3000/jokes/5e314479a8d9d839a4734bdb
+Content-Type: application/json
+
+{
+    "jokeTekst": "updatedddd"
+}
+
+###
+
+DELETE http://localhost:3000/jokes/5e31453794e3474ff8d21445
+
+
+###
+
+GET http://localhost:3000/jokes/sog/a
+
+###
+
+GET http://localhost:3000/jokes/limit
+Content-Type: application/json
+
+{
+    "limit": 5,
+    "page": 1
+}
